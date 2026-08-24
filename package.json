@@ -1,0 +1,24 @@
+{
+  "name": "opencode-task-checker",
+  "version": "1.0.3",
+  "description": "OpenCode plugin to check long running tasks and stop them based on assistant replies.",
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "esbuild src/index.ts --bundle --platform=node --format=esm --outfile=dist/index.js",
+    "prepack": "npm run build"
+  },
+  "files": [
+    "dist/index.js",
+    "package.json",
+    "README.md",
+    "install.sh"
+  ],
+  "devDependencies": {
+    "@opencode-ai/plugin": "1.18.21",
+    "@opencode-ai/sdk": "1.18.21",
+    "@types/bun": "1.2.14",
+    "esbuild": "0.25.3",
+    "typescript": "7.0.2"
+  }
+}
