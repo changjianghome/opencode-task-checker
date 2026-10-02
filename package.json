@@ -1,7 +1,7 @@
 {
   "name": "opencode-task-checker",
-  "version": "1.0.3",
-  "description": "OpenCode plugin to check long running tasks and stop them based on assistant replies.",
+  "version": "1.1.0",
+  "description": "OpenCode V1/V2 plugin: 3-minute idle status check for long-running tasks, with silent slash-command control and auto-interrupt on terminal replies.",
   "type": "module",
   "main": "dist/index.js",
   "scripts": {
@@ -16,6 +16,7 @@
   ],
   "devDependencies": {
     "@opencode-ai/plugin": "1.18.21",
+    "@opencode/plugin": "2.0.21",
     "@opencode-ai/sdk": "1.18.21",
     "@types/bun": "1.2.14",
     "esbuild": "0.25.3",
